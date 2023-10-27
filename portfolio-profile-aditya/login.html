@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="navbar">
+                <div id="logo">
+                    <img src="icon.png" alt="logo" id="logo">
+                    <h4>pandoräsh</h4>
+                </div>
+                <ul id="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html" class="log" id="actives">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="body">
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Buat Akun</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>atau gunakan email dan password</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Log in</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>atau gunakan email dan password</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">lupa password?</a>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <img src="icon.png" alt="logo" height="150px" width="150px">
+                        <h1>Selamat Datang Kembali!</h1>
+                        <p>Masukkan detail pribadi Anda untuk menggunakan semua fitur situs</p>
+                        <button class="hidden" id="login">Masuk</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <img src="icon.png" alt="logo" height="150px" width="150px">
+                        <h1>Hai, pandorash !</h1>
+                        <p>Daftarkan dengan detail pribadi Anda untuk menggunakan semua fitur situs</p>
+                        <button class="hidden" id="register">Daftar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    </script>
+</body>
+<script src="script.js"></script>
+</html>

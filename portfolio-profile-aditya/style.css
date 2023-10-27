@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(background.jpg);
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#header #navbar {
+    background-color: #1e1b20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 10px 10px 10px #00000091;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+
+#header #navbar #logo {
+    margin-left: 5px;
+    display: flex;
+    transition: .3s;
+}
+
+#header #navbar #logo img {
+    width: 64px;
+    height: 64px;
+}
+
+#header #navbar #logo h4 {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: 20px;
+    color: rgb(177, 177, 177);
+}
+
+#header #navbar #logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#header #navbar #list {
+    display: flex;
+    padding: 25px;
+}
+
+#header #navbar #list li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#header #navbar #list li a {
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#header #navbar #list li.log {
+    margin-right: 4px;
+}
+
+#header #navbar #list li a.log {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#header #navbar #list li a.log {
+    background-color: rgb(107, 107, 107);
+    padding: 15px;
+}
+
+#header #navbar #list li a.log:hover,
+#header #navbar #list li a.log.actives {
+    color: #222;
+}
+
+#header #navbar #list li a:hover,
+#header #navbar #list li a.active {
+    color: #5c5a5a;
+}
+
+#home-page {
+    margin-top: 250px;
+    margin-left: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 870px;
+}
+
+#home-page h3 {
+    color: white;
+    bottom: -14px;
+}
+
+#home-page h1 {
+    font-weight: bolder;
+    color: rgb(177, 177, 177);
+    font-size: 64px;
+}
+
+#home-page p {
+    margin-top: 15px;
+    color: white;
+}
+
+#home-page p span {
+    color: rgb(107, 107, 107);
+    font-weight: 800;
+}
+
+#home-page button {
+    margin-top: 15px;
+    background-color: transparent;
+    border: 2px solid rgb(177, 177, 177);
+    padding: 10px;
+    color: rgb(177, 177, 177);
+    border-radius: 25px;
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+#home-page button:hover {
+    cursor: pointer;
+    border: 2px solid #504f4f;
+    color: #504f4f;
+    transform: scale(1.1);
+}
+
+#home-page #icons {
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(107, 107, 107);
+    border-radius: 20px;
+}
+
+#home-page #icons:hover {
+    cursor: pointer;
+}
+
+#home-page #icons span i {
+    margin: 5px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+#home-page #icons span i:hover {
+    transform: scale(1.1);
+    color: #222;
+}
+
+#row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 65px;
+}
+
+#row h1 {
+    font-size: 34px;
+    transition: .3s;
+}
+
+#row h1:hover {
+    color: rgb(0, 255, 234);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#row p {
+    font-size: 20px;
+}
+
+#col h1 {
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+
+#col p {
+    color: white;
+    font-size: 12px;
+}
+#col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 55px;
+}
+
+#card2 p {
+    color: #222;
+}
+
+#card {
+    width: 400px;
+    height: 460px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(calculator.png);
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    border: 3px solid white;
+}
+
+#card2 {
+    width: 400px;
+    height: 460px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(bazar.png);
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    border: 3px solid white;
+}
+
+#card3 {
+    width: 400px;
+    height: 460px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(creating.png);
+    backdrop-filter: blur(18px);
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    border: 3px solid rgb(177, 177, 177);
+}
+
+#card:hover {
+    transform: scale(1.1);
+}
+
+#card2:hover {
+    transform: scale(1.1);
+}

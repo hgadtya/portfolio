@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="icon.png">
+	<title>Pandorash - Video</title>
+    <style>
+        video {
+            border: 5px solid white;
+            margin-top: 140px;
+            margin-left: 450px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+            box-shadow: 4px 4px 4px 4px rgba(219, 219, 219, 0.233);
+            transition: .3s;
+            border-radius: 35px;
+        }
+
+        #video:hover {
+            cursor: pointer;
+        }
+        #video-kit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: 55px;
+        }
+
+        #video-kit button {
+            padding: 10px;
+            border: none;
+            color: white;
+            background-color: transparent;
+            font-size: 24px;
+            transition: .3s;
+        }
+
+        #video-kit button:hover {
+            color: #777;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar start -->
+    <header>
+        <div id="header">
+            <div id="navbar">
+                <div id="logo">
+                    <img src="icon.png" alt="logo" id="logo">
+                    <h4>pandoräsh</h4>
+                </div>
+                <ul id="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="video.html" class="active">Video</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="work.html" class="log">Work</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- start video page -->
+    <div id="container">
+        <video>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div id="video-kit">
+            <button> — </button>
+            <button onclick="play()"><i class="fa-regular fa-circle-play"></i></button>
+            <button onclick="pause()"><i class="fa-regular fa-circle-pause"></i></button>
+            <button onclick="minimize()"><i class="fa-solid fa-minimize"></i></button>
+            <button onclick="mute()"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button onclick="volume()"><i class="fa-solid fa-volume-high"></i></button>
+            <button> — </button>
+        </div>
+    </div>
+    <!-- end video page -->
+</body>
+<script src="script.js"></script>
+<script>
+    const video = document.querySelector("video");
+
+    function play() {
+        console.log("playing");
+        video.play()
+        button.style.color = rgb(177, 177, 177);
+    }
+    function pause() {
+        console.log("pause");
+        video.pause()
+    }
+    function minimize() {
+        console.log("minimize");
+        video.requestPictureInPicture()
+    }
+    function mute() {
+        console.log("mute");
+        video.volume = 0;
+    }
+    function volume() {
+        video.volume = 1;
+    }
+</script>
+</html>

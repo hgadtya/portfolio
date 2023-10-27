@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Pandorash - Profile</title>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <header>
+        <div id="header">
+            <div id="navbar">
+                <div id="logo">
+                    <img src="icon.png" alt="logo" id="logo">
+                    <h4>pandoräsh</h4>
+                </div>
+                <ul id="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="work.html" class="log">Work</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- navbar end -->
+
+    <div id="wrapper">
+        <div class="card">
+            <section class="main">
+                <p class="name">Aditya</p>
+                <p>Frontend Web Developer</p>
+            </section>
+    
+            <section class="more">
+                <p>— hire or follow me below —</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/hgadtya_" class="facebook" id="social-ig">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="http://pandorashop.my.id" class="youtube" id="social-web">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                    <a href="https://github.com/fnticxdesign" class="github" id="social-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/n.meliaaptr" class="linkedin" id="social-love">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                    <a href="https://spotify.link/uBuuqHl6cEb" class="twitter" id="social-spotify">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                    <a href="mailto:almechanic4@gmail.com" class="googleplus" id="social-email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </section>
+    
+            <section class="info">
+                <section>
+                    <p><i class="fa-brands fa-html5" style="color: #222;"></i></p>
+                    <p class="value">85%</p>
+                </section>
+                <section>
+                    <p><i class="fa-brands fa-css3-alt" style="color: #222;"></i></p>
+                    <p class="value">53%</p>
+                </section>
+                <section>
+                    <p><i class="fa-brands fa-square-js" style="color: #222;"></i></p>
+                    <p class="value">28%</p>
+                </section>
+                <button id="openerBtn">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                </button>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<script>
+    var buttonEl = document.getElementById('openerBtn');
+    var cardEl = document.querySelector('.card');
+
+    buttonEl.addEventListener('click', function() {
+        cardEl.classList.toggle('opened');
+    })
+</script>
+
+</html>
